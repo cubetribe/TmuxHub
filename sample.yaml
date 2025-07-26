@@ -1,0 +1,20 @@
+session_name: my-dev-session
+windows:
+  - window_name: editor
+    panes:
+      - commands:
+          - echo "Öffne Code-Editor..."
+          - nvim
+  - window_name: services
+    panes:
+      - commands:
+          - echo "Starte Backend-Dienste..."
+          - htop
+      - commands:
+          - echo "Starte Frontend..."
+          - sleep 5 && echo "Frontend gestartet!"
+  - window_name: logs
+    panes:
+      - commands:
+          - echo "Beobachte Logs..."
+          - tail -f /var/log/syslog

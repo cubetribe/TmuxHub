@@ -1,0 +1,2 @@
+libtmux>=0.21.0
+PyYAML>=6.0
